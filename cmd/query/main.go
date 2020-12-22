@@ -73,7 +73,7 @@ func handleRequest(ctx context.Context, request events.APIGatewayProxyRequest) (
 	var maxNum float64
 	var minNum float64
 	maxNum = 1
-	minNum = 100
+	minNum = 1000000000
 	for _, row := range rowsData {
 		maxNum = math.Max(maxNum, float64(row.Count))
 		minNum = math.Min(minNum, float64(row.Count))
